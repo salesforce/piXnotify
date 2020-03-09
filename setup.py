@@ -1,3 +1,8 @@
+#  Copyright (c) 2020, salesforce.com, inc.
+#   * All rights reserved.
+#   * SPDX-License-Identifier: BSD-3-Clause
+#   * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -35,7 +40,7 @@ setuptools.setup(
     packages=PACKAGES,
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
