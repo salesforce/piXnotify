@@ -32,10 +32,10 @@ setuptools.setup(
     version="0.0.1",
     author="franck.barbedor",
     author_email="franck.barbedor@salesforce.com",
-    description="A cross-platform notificartion library",
+    description="A cross-platform notifications library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://git.soma.salesforce.com/franck-barbedor/piXnotify",
+    url="https://github.com/salesforce/piXnotify/",
     packages=PACKAGES,
     classifiers=[
         "Programming Language :: Python :: 3",
