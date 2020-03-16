@@ -12,7 +12,6 @@ PACKAGES = [
     'piXnotify',
     'piXnotify.OSNotifiers',
     'piXnotify.OSNotifiers.macosx',
-    'piXnotify.OSNotifiers.windows',
     'piXnotify.OSNotifiers.linux',
 ]
 
@@ -21,8 +20,8 @@ def os_requires(packages_list, os_name):
     return [f'{package};platform_system=="{os_name}"' for package in packages_list]
 
 
-MAC_REQUIRES = os_requires(["pync"], "Darwin")
-LINUX_REQUIRES = os_requires(["notify2"], "Linux")
+MAC_REQUIRES = os_requires(["pync==2.0.3"], "Darwin")
+LINUX_REQUIRES = os_requires(["notify2==0.3.1"], "Linux")
 
 PACKAGE_REQUIREMENTS = []
 PACKAGE_REQUIREMENTS.extend(MAC_REQUIRES)
