@@ -13,6 +13,7 @@ PACKAGES = [
     'piXnotify.OSNotifiers',
     'piXnotify.OSNotifiers.macosx',
     'piXnotify.OSNotifiers.linux',
+    'piXnotify.OSNotifiers.windows',
 ]
 
 
@@ -22,10 +23,12 @@ def os_requires(packages_list, os_name):
 
 MAC_REQUIRES = os_requires(["pync==2.0.3"], "Darwin")
 LINUX_REQUIRES = os_requires(["notify2==0.3.1"], "Linux")
+WINDOWS_REQUIRES = os_requires(["win10toast==0.9"], "Windows")
 
 PACKAGE_REQUIREMENTS = []
 PACKAGE_REQUIREMENTS.extend(MAC_REQUIRES)
 PACKAGE_REQUIREMENTS.extend(LINUX_REQUIRES)
+PACKAGE_REQUIREMENTS.extend(WINDOWS_REQUIRES)
 
 setuptools.setup(
     name="piXnotify",
