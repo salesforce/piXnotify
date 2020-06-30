@@ -22,4 +22,4 @@ class NotifierBuilder(object):
             notifier = mod.WindowsNotifier()
             return notifier
         else:
-            raise Exception("Platform Not Supported")
+            raise EnvironmentError("Platform Not Supported")
