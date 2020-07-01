@@ -9,11 +9,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 PACKAGES = [
-    'piXnotify',
-    'piXnotify.OSNotifiers',
-    'piXnotify.OSNotifiers.macosx',
-    'piXnotify.OSNotifiers.linux',
-    'piXnotify.OSNotifiers.windows',
+    "piXnotify",
+    "piXnotify.OSNotifiers",
+    "piXnotify.OSNotifiers.macosx",
+    "piXnotify.OSNotifiers.linux",
+    "piXnotify.OSNotifiers.windows",
 ]
 
 
@@ -45,6 +45,6 @@ setuptools.setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
-    install_requires=PACKAGE_REQUIREMENTS
+    python_requires=">=3.6",
+    install_requires=PACKAGE_REQUIREMENTS,
 )

@@ -25,6 +25,4 @@ class WindowsNotifier(AbstractNotifier):
         self.set_if_not_none(args, "sound")
         self.set_if_not_none(args, "appIcon", "icon_path")
 
-        self.toaster.show_toast(self.title,
-                                self.message,
-                                **args)
+        self.toaster.show_toast(self.title, self.message, **args)

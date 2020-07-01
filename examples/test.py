@@ -10,7 +10,9 @@ def notify_with_message():
 
 
 def notify_with_icon():
-    notifier.set_title("Title").set_app_icon("http://pngimg.com/uploads/github/github_PNG83.png").notify()
+    notifier.set_title("Title").set_app_icon(
+        "http://pngimg.com/uploads/github/github_PNG83.png"
+    ).notify()
 
 
 if __name__ == "__main__":

@@ -17,8 +17,5 @@ class LinuxNotifier(AbstractNotifier):
     def _notify(self):
         args = {"message": self.message}
         self.set_if_not_none(args, "appIcon", custom_parameter="icon")
-        notification = notify2.Notification(
-            self.title,
-            **args
-        )
+        notification = notify2.Notification(self.title, **args)
         notification.show()
