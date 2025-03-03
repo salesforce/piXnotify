@@ -46,6 +46,14 @@ Available options are:
 
 As you can see, a lot of these are still WIP. This is mainly because of OS specific behaviours that have not been extensively tested yet. 
 
+## System Specific Usages
+
+### MacOs
+
+On Mac systems, if no notifications get displayed:
+- Make sure you are not in "focus mode"
+- Make sure terminal-notifier has notifications enabled (System Settings > Notifications > terminal-notifier > Allow notifications)
+
 ## Development and contributions
 
 Contributions are encouraged, please use Issues to communicate on improvements you may be working on. 
